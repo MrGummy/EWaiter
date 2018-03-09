@@ -18,14 +18,14 @@ public interface DishCommentMapper {
     List<DishComment> selectAll();
 
     @Select("SELECT * FROM dishComment WHERE id = #{id}")
-    DishComment selectById(int id);
+    DishComment selectById(Integer id);
 
     @Delete("DELETE FROM dishComment WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO dishComment('comment', 'dateTime') VALUES (#{comment}, #{dateTime})")
-    int insert(DishComment DishComment);
+    int insert(DishComment dishComment);
 
     @Update("UPDATE dishComment SET comment = #{comment}, dateTime = #{dateTime}")
-    int update(DishComment DishComment);
+    int update(DishComment dishComment);
 }

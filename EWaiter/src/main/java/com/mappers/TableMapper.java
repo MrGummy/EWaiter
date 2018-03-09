@@ -17,14 +17,14 @@ public interface TableMapper {
     List<Table> selectAll();
 
     @Select("SELECT * FROM `table` WHERE id = #{id}")
-    Table selectById(int id);
+    Table selectById(Integer id);
 
     @Delete("DELETE FROM `table` WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO `table`('scheme') VALUES (#{scheme})")
-    int insert(Table Table);
+    int insert(Table table);
 
     @Update("UPDATE `table` SET scheme = #{scheme}")
-    int update(Table Table);
+    int update(Table table);
 }

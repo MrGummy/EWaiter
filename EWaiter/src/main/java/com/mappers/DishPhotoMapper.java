@@ -17,14 +17,14 @@ public interface DishPhotoMapper {
     List<DishPhoto> selectAll();
 
     @Select("SELECT * FROM dishPhoto WHERE id = #{id}")
-    DishPhoto selectById(int id);
+    DishPhoto selectById(Integer id);
 
     @Delete("DELETE FROM dishPhoto WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO dishPhoto('url') VALUES (#{url})")
-    int insert(DishPhoto DishPhoto);
+    int insert(DishPhoto dishPhoto);
 
     @Update("UPDATE dishPhoto SET url = #{url}")
-    int update(DishPhoto DishPhoto);
+    int update(DishPhoto dishPhoto);
 }

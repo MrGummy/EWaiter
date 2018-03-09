@@ -24,15 +24,15 @@ public interface MenuMapper {
     List<Menu> selectAll();
 
     @Select("SELECT * FROM menu WHERE id = #{id}")
-    Menu selectById(int id);
+    Menu selectById(Integer id);
 
     @Delete("DELETE FROM menu WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO menu( 'name', 'description', 'categories', 'date')" +
             " VALUES (#{name}, #{description}, #{categories}, #{date})")
-    int insert(Menu Menu);
+    int insert(Menu menu);
 
     @Update("UPDATE menu SET name = #{name}, description = #{description}, categories = #{categories}, date = #{date}")
-    int update(Menu Menu);
+    int update(Menu menu);
 }

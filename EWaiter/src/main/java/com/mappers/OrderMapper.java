@@ -33,15 +33,15 @@ public interface OrderMapper {
     List<Order> selectAll();
 
     @Select("SELECT * FROM `order` WHERE id = #{id}")
-    Order selectById(int id);
+    Order selectById(Integer id);
 
     @Delete("DELETE FROM `order` WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO `order`( 'table', 'waiter', 'dateTime', 'dishes')" +
             " VALUES (#{table}, #{waiter}, #{dateTime}, #{dishes})")
-    int insert(Order Order);
+    int insert(Order order);
 
     @Update("UPDATE `order` SET table = #{table}, waiter = #{waiter}, dateTime = #{dateTime}, dishes = #{dishes}")
-    int update(Order Order);
+    int update(Order order);
 }

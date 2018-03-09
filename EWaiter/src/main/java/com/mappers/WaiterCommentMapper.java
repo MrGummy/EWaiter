@@ -18,14 +18,14 @@ public interface WaiterCommentMapper {
     List<WaiterComment> selectAll();
 
     @Select("SELECT * FROM waiterComment WHERE id = #{id}")
-    WaiterComment selectById(int id);
+    WaiterComment selectById(Integer id);
 
     @Delete("DELETE FROM waiterComment WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO waiterComment('comment', 'dateTime') VALUES (#{comment}, #{dateTime})")
-    int insert(WaiterComment WaiterComment);
+    int insert(WaiterComment waiterComment);
 
     @Update("UPDATE waiterComment SET comment = #{comment}, dateTime = #{dateTime}")
-    int update(WaiterComment WaiterComment);
+    int update(WaiterComment waiterComment);
 }

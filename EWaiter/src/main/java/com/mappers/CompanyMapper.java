@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public interface CompanyMapper {
-    @Results({
+    @Results(value = {
             @Result(property = "id", column = "id"),
             @Result(property = "name", column = "name"),
             @Result(property = "login", column = "login"),
@@ -25,14 +25,14 @@ public interface CompanyMapper {
     List<Company> selectAll();
 
     @Select("SELECT * FROM company WHERE id = #{id}")
-    Company selectById(int id);
+    Company selectById(Integer id);
 
     @Delete("DELETE FROM company WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO company('name', 'login', 'password', 'menu', 'date') VALUES (#{name}, #{login}, #{password}, #{menu}, #{date})")
-    int insert(Company Company);
+    int insert(Company company);
 
     @Update("UPDATE company SET name = #{name}, login = #{login}, password = #{password}, menu = #{menu}, date = #{date}")
-    int update(Company Company);
+    int update(Company company);
 }

@@ -27,15 +27,15 @@ public interface WaiterMapper {
     List<Waiter> selectAll();
 
     @Select("SELECT * FROM waiter WHERE id = #{id}")
-    Waiter selectById(int id);
+    Waiter selectById(Integer id);
 
     @Delete("DELETE FROM waiter WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO waiter('firstName', 'lastName', 'login', 'password', 'photo', 'comments') " +
             "VALUES (#{firstName}, #{lastName}, #{login}, #{password}, #{photo}, #{comments})")
-    int insert(Waiter Waiter);
+    int insert(Waiter waiter);
 
     @Update("UPDATE waiter SET firstName = #{firstName}, lastName = #{lastName}, login = #{login}, password = #{password}, photo = #{photo}, comments = #{comments}")
-    int update(Waiter Waiter);
+    int update(Waiter waiter);
 }

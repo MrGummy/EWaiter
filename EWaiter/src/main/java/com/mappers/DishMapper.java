@@ -31,15 +31,15 @@ public interface DishMapper {
     List<Dish> selectAll();
 
     @Select("SELECT * FROM dish WHERE id = #{id}")
-    Dish selectById(int id);
+    Dish selectById(Integer id);
 
     @Delete("DELETE FROM dish WHERE id = #{id}")
-    int deleteById(int id);
+    int deleteById(Integer id);
 
     @Insert("INSERT INTO dish('name', 'description', 'weight', 'price', 'cookTime', 'photos', 'comments') " +
             "VALUES (#{name}, #{description}, #{weight}, #{price}, #{cookTime}, #{photos}, #{comments})")
-    int insert(Dish Dish);
+    int insert(Dish dish);
 
     @Update("UPDATE dish SET name = #{name}, description = #{description}, weight = #{weight}, price = #{price}, cookTime = #{cookTime}, photos = #{photos}, comments = #{comments}")
-    int update(Dish Dish);
+    int update(Dish dish);
 }
