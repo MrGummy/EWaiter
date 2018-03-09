@@ -11,7 +11,7 @@ public interface DishCommentMapper {
     @Results({
             @Result(property = "id", column = "id"),
             @Result(property = "comment", column = "comment"),
-            @Result(property = "date", column = "date")
+            @Result(property = "dateTime", column = "dateTime")
     })
 
     @Select("SELECT * FROM dishComment")
@@ -23,9 +23,9 @@ public interface DishCommentMapper {
     @Delete("DELETE FROM dishComment WHERE id = #{id}")
     int deleteById(int id);
 
-    @Insert("INSERT INTO dishComment('comment', 'date') VALUES (#{comment}, #{date})")
+    @Insert("INSERT INTO dishComment('comment', 'dateTime') VALUES (#{comment}, #{dateTime})")
     int insert(DishComment DishComment);
 
-    @Update("UPDATE dishComment SET comment = #{comment}, date = #{date}")
+    @Update("UPDATE dishComment SET comment = #{comment}, dateTime = #{dateTime}")
     int update(DishComment DishComment);
 }

@@ -1,20 +1,20 @@
 package com.model;
 
-import java.util.Date;
+import java.sql.Timestamp;
 import java.util.Objects;
 
 public class WaiterComment {
     private int id;
     private String comment;
-    private Date date;
+    private Timestamp dateTime;
 
     public WaiterComment() {
     }
 
-    public WaiterComment(int id, String comment, Date date) {
+    public WaiterComment(int id, String comment, Timestamp dateTime) {
         this.id = id;
         this.comment = comment;
-        this.date = date;
+        this.dateTime = dateTime;
     }
 
     public int getId() {
@@ -33,12 +33,12 @@ public class WaiterComment {
         this.comment = comment;
     }
 
-    public Date getDate() {
-        return date;
+    public Timestamp getDate() {
+        return dateTime;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(Timestamp dateTime) {
+        this.dateTime = dateTime;
     }
 
     @Override
@@ -48,13 +48,13 @@ public class WaiterComment {
         WaiterComment that = (WaiterComment) o;
         return id == that.id &&
                 Objects.equals(comment, that.comment) &&
-                Objects.equals(date, that.date);
+                Objects.equals(dateTime, that.dateTime);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, comment, date);
+        return Objects.hash(id, comment, dateTime);
     }
 
     @Override
@@ -62,7 +62,7 @@ public class WaiterComment {
         return "WaiterComment{" +
                 "id=" + id +
                 ", comment='" + comment + '\'' +
-                ", date=" + date +
+                ", dateTime=" + dateTime +
                 '}';
     }
 }
