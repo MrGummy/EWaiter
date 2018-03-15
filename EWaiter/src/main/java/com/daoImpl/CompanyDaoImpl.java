@@ -1,5 +1,6 @@
-package com.dao;
+package com.daoImpl;
 
+import com.dao.CompanyDao;
 import com.mappers.CompanyMapper;
 import com.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;

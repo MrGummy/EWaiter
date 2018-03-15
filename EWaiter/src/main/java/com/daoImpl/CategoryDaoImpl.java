@@ -1,5 +1,6 @@
-package com.dao;
+package com.daoImpl;
 
+import com.dao.CategoryDao;
 import com.mappers.CategoryMapper;
 import com.model.Category;
 import org.springframework.beans.factory.annotation.Autowired;

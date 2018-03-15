@@ -1,7 +1,7 @@
 package com.controllers;
 
-import com.dao.CategoryDaoImpl;
-import com.dao.CompanyDaoImpl;
+import com.daoImpl.CategoryDaoImpl;
+import com.daoImpl.CompanyDaoImpl;
 import com.model.Category;
 import com.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,21 +17,11 @@ public class HomeController
     private CompanyDaoImpl companyDao;
 
     @RequestMapping("/")
-    public String index0(Model companyModel)
+    public String index(Model companyModel)
     {
         List<Company> companies = companyDao.selectAll();
         companyModel.addAttribute("companies", companies);
         return "home";
     }
 
-    @Autowired
-    private CategoryDaoImpl categoryDao;
-
-    @RequestMapping("/")
-    public String index1(Model categoryModel)
-    {
-        List<Category> categories = categoryDao.selectAll();
-        categoryModel.addAttribute("companies", categories);
-        return "home";
-    }
 }
