@@ -16,8 +16,8 @@ public class MenuDaoImpl implements MenuDao {
 
     @Override
     public List<Menu> selectAll() {
-        List<Menu> categories = menuMapper.selectAll();
-        return categories;
+        List<Menu> menus = menuMapper.selectAll();
+        return menus;
     }
 
     @Override

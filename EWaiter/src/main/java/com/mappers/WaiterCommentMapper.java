@@ -14,6 +14,9 @@ public interface WaiterCommentMapper {
             @Result(property = "dateTime", column = "dateTime")
     })
 
+    @Select("SELECT * FROM waiterComment WHERE waiterId = #{id}")
+    List<WaiterComment> selectWaiterComments();
+
     @Select("SELECT * FROM waiterComment")
     List<WaiterComment> selectAll();
 

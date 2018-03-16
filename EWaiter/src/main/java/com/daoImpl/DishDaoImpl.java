@@ -1,6 +1,7 @@
 package com.daoImpl;
 
 import com.dao.DishDao;
+import com.mappers.CategoryMapper;
 import com.mappers.DishMapper;
 import com.model.Dish;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +14,12 @@ public class DishDaoImpl implements DishDao {
 
     @Autowired
     private DishMapper dishMapper;
+    private CategoryMapper categoryMapper;
 
     @Override
     public List<Dish> selectAll() {
-        List<Dish> categories = dishMapper.selectAll();
-        return categories;
+        List<Dish> dishes = dishMapper.selectAll();
+        return dishes;
     }
 
     @Override

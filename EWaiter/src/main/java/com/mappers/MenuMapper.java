@@ -13,12 +13,12 @@ public interface MenuMapper {
             @Result(property = "id", column = "id"),
             @Result(property = "name", column = "name"),
             @Result(property = "description", column = "description"),
-            @Result(property = "categories", column = "id", javaType=List.class, many=@Many(select="selectCategories")),
+            @Result(property = "categories", column = "id", javaType=List.class, many=@Many(select="com.mappers.CategoryMapper.selectCategories")),
             @Result(property = "date", column = "date")
     })
 
-    @Select("SELECT * FROM category WHERE menuId = #{id}")
-    List<Category> selectCategories();
+    @Select("SELECT * FROM menu WHERE companyId = #{id}")
+    List<Menu> selectMenus();
 
     @Select("SELECT * FROM menu")
     List<Menu> selectAll();
@@ -29,10 +29,10 @@ public interface MenuMapper {
     @Delete("DELETE FROM menu WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO menu( 'name', 'description', 'categories', 'date')" +
-            " VALUES (#{name}, #{description}, #{categories}, #{date})")
+    @Insert("INSERT INTO menu( 'name', 'description', 'date')" +
+            " VALUES (#{name}, #{description}, #{date})")
     int insert(Menu menu);
 
-    @Update("UPDATE menu SET name = #{name}, description = #{description}, categories = #{categories}, date = #{date}")
+    @Update("UPDATE menu SET name = #{name}, description = #{description}, date = #{date}")
     int update(Menu menu);
 }

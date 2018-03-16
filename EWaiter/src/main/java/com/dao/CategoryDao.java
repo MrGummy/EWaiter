@@ -1,6 +1,7 @@
 package com.dao;
 
 import com.model.Category;
+import com.model.Dish;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

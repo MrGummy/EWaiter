@@ -14,6 +14,9 @@ public interface DishCommentMapper {
             @Result(property = "dateTime", column = "dateTime")
     })
 
+    @Select("SELECT * FROM dishComment WHERE dishId = #{id}")
+    List<DishComment> selectDishComments();
+
     @Select("SELECT * FROM dishComment")
     List<DishComment> selectAll();
 

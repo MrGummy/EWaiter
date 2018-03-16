@@ -13,12 +13,12 @@ public interface CategoryMapper {
             @Result(property = "id", column = "id"),
             @Result(property = "name", column = "name"),
             @Result(property = "description", column = "description"),
-            @Result(property = "dishes", column = "id", javaType=List.class, many=@Many(select="selectDishes")),
+            @Result(property = "dishes", column = "id", javaType=List.class, many=@Many(select="com.mappers.DishMapper.selectDishes")),
             @Result(property = "photo", column = "photo")
     })
 
-    @Select("SELECT * FROM dish WHERE categoryId = #{id}")
-    List<Dish> selectDishes();
+    @Select("SELECT * FROM category WHERE menuId = #{id}")
+    List<Category> selectCategories();
 
     @Select("SELECT * FROM category")
     List<Category> selectAll();
@@ -29,9 +29,9 @@ public interface CategoryMapper {
     @Delete("DELETE FROM category WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO category( 'name', 'description', 'dishes', 'photo') VALUES (#{name}, #{description}, #{dishes}, #{photo})")
+    @Insert("INSERT INTO category( 'name', 'description', 'photo') VALUES (#{name}, #{description}, #{photo})")
     int insert(Category category);
 
-    @Update("UPDATE category SET name = #{name}, description = #{description}, dishes = #{dishes}, photo = #{photo}")
+    @Update("UPDATE category SET name = #{name}, description = #{description}, photo = #{photo}")
     int update(Category category);
 }

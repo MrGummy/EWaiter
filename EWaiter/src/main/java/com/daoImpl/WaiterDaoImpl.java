@@ -16,8 +16,8 @@ public class WaiterDaoImpl implements WaiterDao {
 
     @Override
     public List<Waiter> selectAll() {
-        List<Waiter> categories = waiterMapper.selectAll();
-        return categories;
+        List<Waiter> waiters = waiterMapper.selectAll();
+        return waiters;
     }
 
     @Override

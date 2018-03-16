@@ -16,8 +16,8 @@ public class TableDaoImpl implements TableDao {
 
     @Override
     public List<Table> selectAll() {
-        List<Table> categories = tableMapper.selectAll();
-        return categories;
+        List<Table> tables = tableMapper.selectAll();
+        return tables;
     }
 
     @Override

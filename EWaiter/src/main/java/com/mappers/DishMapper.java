@@ -17,15 +17,15 @@ public interface DishMapper {
             @Result(property = "weight", column = "weight"),
             @Result(property = "price", column = "price"),
             @Result(property = "cookTime", column = "cookTime"),
-            @Result(property = "photos", column = "id", javaType=List.class, many=@Many(select="selectDishPhotos")),
-            @Result(property = "comments", column = "id", javaType=List.class, many=@Many(select="selectDishComments"))
+            @Result(property = "photos", column = "id", javaType=List.class, many=@Many(select="com.mappers.DishPhotoMapper.selectDishPhotos")),
+            @Result(property = "comments", column = "id", javaType=List.class, many=@Many(select="com.mappers.DishCommentMapper.selectDishComments"))
     })
 
-    @Select("SELECT * FROM dishPhoto WHERE dishId = #{id}")
-    List<DishPhoto> selectDishPhotos();
+    @Select("SELECT * FROM dish WHERE categoryId = #{id}")
+    List<Dish> selectDishes();
 
-    @Select("SELECT * FROM dishComment WHERE dishId = #{id}")
-    List<DishComment> selectDishComments();
+    @Select("SELECT * FROM dish WHERE id = #{id}")
+    List<Dish> selectOrderDishes();
 
     @Select("SELECT * FROM dish")
     List<Dish> selectAll();
@@ -36,10 +36,10 @@ public interface DishMapper {
     @Delete("DELETE FROM dish WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO dish('name', 'description', 'weight', 'price', 'cookTime', 'photos', 'comments') " +
-            "VALUES (#{name}, #{description}, #{weight}, #{price}, #{cookTime}, #{photos}, #{comments})")
+    @Insert("INSERT INTO dish('name', 'description', 'weight', 'price', 'cookTime') " +
+            "VALUES (#{name}, #{description}, #{weight}, #{price}, #{cookTime}")
     int insert(Dish dish);
 
-    @Update("UPDATE dish SET name = #{name}, description = #{description}, weight = #{weight}, price = #{price}, cookTime = #{cookTime}, photos = #{photos}, comments = #{comments}")
+    @Update("UPDATE dish SET name = #{name}, description = #{description}, weight = #{weight}, price = #{price}, cookTime = #{cookTime}")
     int update(Dish dish);
 }

@@ -13,6 +13,9 @@ public interface DishPhotoMapper {
             @Result(property = "url", column = "url")
     })
 
+    @Select("SELECT * FROM dishPhoto WHERE dishId = #{id}")
+    List<DishPhoto> selectDishPhotos();
+
     @Select("SELECT * FROM dishPhoto")
     List<DishPhoto> selectAll();
 

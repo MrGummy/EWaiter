@@ -29,6 +29,13 @@ public class CompanyController
         return gson.toJson(companyDao.selectAll());
     }
 
+    @RequestMapping("/company/selectById/{companyId}")
+    @ResponseBody
+    public String selectById(@PathVariable(value="companyId") int companyId)
+    {
+        return gson.toJson(companyDao.selectById(companyId));
+    }
+
     @RequestMapping(value ="/company/deleteById/{companyId}",method  = RequestMethod.GET)
     @ResponseBody
     public String deleteById(@PathVariable(value="companyId") int companyId)
@@ -44,7 +51,7 @@ public class CompanyController
         return companyDao.insert(company)+"";
     }
 
-    @RequestMapping(value="/company/insertCompany/{json}",method = RequestMethod.GET)
+    @RequestMapping(value="/company/updateCompany/{json}",method = RequestMethod.GET)
     @ResponseBody
     public String update(@PathVariable(value="json") String json)
     {

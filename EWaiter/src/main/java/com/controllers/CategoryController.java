@@ -29,6 +29,13 @@ public class CategoryController
         return gson.toJson(categoryDao.selectAll());
     }
 
+    @RequestMapping("/category/selectById/{categoryId}")
+    @ResponseBody
+    public String selectById(@PathVariable(value="categoryId") int categoryId)
+    {
+        return gson.toJson(categoryDao.selectById(categoryId));
+    }
+
     @RequestMapping(value ="/category/deleteById/{categoryId}",method  = RequestMethod.GET)
     @ResponseBody
     public String deleteById(@PathVariable(value="categoryId") int categoryId)
@@ -44,7 +51,7 @@ public class CategoryController
         return categoryDao.insert(category)+"";
     }
 
-    @RequestMapping(value="/category/insertCategory/{json}",method = RequestMethod.GET)
+    @RequestMapping(value="/category/updateCategory/{json}",method = RequestMethod.GET)
     @ResponseBody
     public String update(@PathVariable(value="json") String json)
     {

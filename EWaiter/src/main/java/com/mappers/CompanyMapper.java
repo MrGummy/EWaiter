@@ -14,12 +14,9 @@ public interface CompanyMapper {
             @Result(property = "name", column = "name"),
             @Result(property = "login", column = "login"),
             @Result(property = "password", column = "password"),
-            @Result(property = "menus", column = "id", javaType=List.class, many=@Many(select="selectMenus")),
+            @Result(property = "menus", column = "id", javaType=List.class, many=@Many(select="com.mappers.MenuMapper.selectMenus")),
             @Result(property = "date", column = "date")
     })
-
-    @Select("SELECT * FROM menu WHERE companyId = #{id}")
-    List<Menu> selectMenus();
 
     @Select("SELECT * FROM company")
     List<Company> selectAll();
@@ -30,9 +27,9 @@ public interface CompanyMapper {
     @Delete("DELETE FROM company WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO company('name', 'login', 'password', 'menu', 'date') VALUES (#{name}, #{login}, #{password}, #{menu}, #{date})")
+    @Insert("INSERT INTO company('name', 'login', 'password', 'date') VALUES (#{name}, #{login}, #{password},  #{date})")
     int insert(Company company);
 
-    @Update("UPDATE company SET name = #{name}, login = #{login}, password = #{password}, menu = #{menu}, date = #{date}")
+    @Update("UPDATE company SET name = #{name}, login = #{login}, password = #{password}, date = #{date}")
     int update(Company company);
 }

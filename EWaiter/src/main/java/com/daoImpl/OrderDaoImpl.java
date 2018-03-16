@@ -16,8 +16,8 @@ public class OrderDaoImpl implements OrderDao {
 
     @Override
     public List<Order> selectAll() {
-        List<Order> categories = orderMapper.selectAll();
-        return categories;
+        List<Order> orders = orderMapper.selectAll();
+        return orders;
     }
 
     @Override

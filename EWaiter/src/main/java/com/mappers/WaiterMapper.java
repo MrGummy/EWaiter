@@ -17,11 +17,8 @@ public interface WaiterMapper {
             @Result(property = "login", column = "login"),
             @Result(property = "password", column = "password"),
             @Result(property = "photo", column = "photo"),
-            @Result(property = "comments", column = "id", javaType=List.class, many=@Many(select="selectWaiterComments"))
+            @Result(property = "comments", column = "id", javaType=List.class, many=@Many(select="com.mappers.WaiterCommentMapper.selectWaiterComments"))
     })
-
-    @Select("SELECT * FROM comment WHERE waiterId = #{id}")
-    List<WaiterComment> selectWaiterComments();
 
     @Select("SELECT * FROM waiter")
     List<Waiter> selectAll();
@@ -32,10 +29,10 @@ public interface WaiterMapper {
     @Delete("DELETE FROM waiter WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO waiter('firstName', 'lastName', 'login', 'password', 'photo', 'comments') " +
-            "VALUES (#{firstName}, #{lastName}, #{login}, #{password}, #{photo}, #{comments})")
+    @Insert("INSERT INTO waiter('firstName', 'lastName', 'login', 'password', 'photo') " +
+            "VALUES (#{firstName}, #{lastName}, #{login}, #{password}, #{photo})")
     int insert(Waiter waiter);
 
-    @Update("UPDATE waiter SET firstName = #{firstName}, lastName = #{lastName}, login = #{login}, password = #{password}, photo = #{photo}, comments = #{comments}")
+    @Update("UPDATE waiter SET firstName = #{firstName}, lastName = #{lastName}, login = #{login}, password = #{password}, photo = #{photo}")
     int update(Waiter waiter);
 }

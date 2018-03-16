@@ -6,18 +6,18 @@ import java.util.Objects;
 
 public class Order {
     private int id;
-    private Table table;
-    private Waiter waiter;
+    private int tableId;
+    private int waiterId;
     private Timestamp dateTime;
     private List<Dish> dishes;
 
     public Order() {
     }
 
-    public Order(int id, Table table, Waiter waiter, Timestamp dateTime, List<Dish> dishes) {
+    public Order(int id, int tableId, int waiterId, Timestamp dateTime, List<Dish> dishes) {
         this.id = id;
-        this.table = table;
-        this.waiter = waiter;
+        this.tableId = tableId;
+        this.waiterId = waiterId;
         this.dateTime = dateTime;
         this.dishes = dishes;
     }
@@ -30,20 +30,20 @@ public class Order {
         this.id = id;
     }
 
-    public Table getTable() {
-        return table;
+    public int getTableId() {
+        return tableId;
     }
 
-    public void setTable(Table table) {
-        this.table = table;
+    public void setTableId(int tableId) {
+        this.tableId = tableId;
     }
 
-    public Waiter getWaiter() {
-        return waiter;
+    public int getWaiterId() {
+        return waiterId;
     }
 
-    public void setWaiter(Waiter waiter) {
-        this.waiter = waiter;
+    public void setWaiterId(int waiterId) {
+        this.waiterId = waiterId;
     }
 
     public Timestamp getDateTime() {
@@ -68,8 +68,8 @@ public class Order {
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
         return id == order.id &&
-                Objects.equals(table, order.table) &&
-                Objects.equals(waiter, order.waiter) &&
+                tableId == order.tableId &&
+                waiterId == order.waiterId &&
                 Objects.equals(dateTime, order.dateTime) &&
                 Objects.equals(dishes, order.dishes);
     }
@@ -77,15 +77,15 @@ public class Order {
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, table, waiter, dateTime, dishes);
+        return Objects.hash(id, tableId, waiterId, dateTime, dishes);
     }
 
     @Override
     public String toString() {
         return "Order{" +
                 "id=" + id +
-                ", table=" + table +
-                ", waiter=" + waiter +
+                ", tableId=" + tableId +
+                ", waiterId=" + waiterId +
                 ", dateTime=" + dateTime +
                 ", dishes=" + dishes +
                 '}';

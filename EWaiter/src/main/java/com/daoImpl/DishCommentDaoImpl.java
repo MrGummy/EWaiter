@@ -16,8 +16,8 @@ public class DishCommentDaoImpl implements DishCommentDao {
 
     @Override
     public List<DishComment> selectAll() {
-        List<DishComment> categories = dishCommentMapper.selectAll();
-        return categories;
+        List<DishComment> dishComments = dishCommentMapper.selectAll();
+        return dishComments;
     }
 
     @Override

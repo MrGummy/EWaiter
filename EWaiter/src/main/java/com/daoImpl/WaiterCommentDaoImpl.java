@@ -16,8 +16,8 @@ public class WaiterCommentDaoImpl implements WaiterCommentDao {
 
     @Override
     public List<WaiterComment> selectAll() {
-        List<WaiterComment> categories = waiterCommentMapper.selectAll();
-        return categories;
+        List<WaiterComment> waiterComments = waiterCommentMapper.selectAll();
+        return waiterComments;
     }
 
     @Override

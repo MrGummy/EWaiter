@@ -16,8 +16,8 @@ public class DishPhotoDaoImpl implements DishPhotoDao {
 
     @Override
     public List<DishPhoto> selectAll() {
-        List<DishPhoto> categories = dishPhotoMapper.selectAll();
-        return categories;
+        List<DishPhoto> dishPhotos = dishPhotoMapper.selectAll();
+        return dishPhotos;
     }
 
     @Override
