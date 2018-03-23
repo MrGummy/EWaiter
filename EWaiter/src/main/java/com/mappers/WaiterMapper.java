@@ -1,7 +1,6 @@
 package com.mappers;
 
 import com.model.Waiter;
-import com.model.Menu;
 import com.model.WaiterComment;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
@@ -26,13 +25,13 @@ public interface WaiterMapper {
     @Select("SELECT * FROM waiter WHERE id = #{id}")
     Waiter selectById(Integer id);
 
-    @Delete("DELETE FROM waiter WHERE id = #{id}")
-    int deleteById(Integer id);
-
-    @Insert("INSERT INTO waiter('firstName', 'lastName', 'login', 'password', 'photo') " +
-            "VALUES (#{firstName}, #{lastName}, #{login}, #{password}, #{photo})")
-    int insert(Waiter waiter);
-
-    @Update("UPDATE waiter SET firstName = #{firstName}, lastName = #{lastName}, login = #{login}, password = #{password}, photo = #{photo}")
-    int update(Waiter waiter);
+//    @Delete("DELETE FROM waiter WHERE id = #{id}")
+//    int deleteById(Integer id);
+//
+//    @Insert("INSERT INTO waiter('firstName', 'lastName', 'login', 'password', 'photo') " +
+//            "VALUES (#{firstName}, #{lastName}, #{login}, #{password}, #{photo})")
+//    int insert(Waiter waiter);
+//
+//    @Update("UPDATE waiter SET firstName = #{firstName}, lastName = #{lastName}, login = #{login}, password = #{password}, photo = #{photo}")
+//    int update(Waiter waiter);
 }

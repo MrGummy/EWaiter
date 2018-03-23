@@ -14,21 +14,21 @@ public interface WaiterCommentMapper {
             @Result(property = "dateTime", column = "dateTime")
     })
 
-    @Select("SELECT * FROM waiterComment WHERE waiterId = #{id}")
+    @Select("SELECT * FROM waitercomment WHERE waiterId = #{id}")
     List<WaiterComment> selectWaiterComments();
 
-    @Select("SELECT * FROM waiterComment")
+    @Select("SELECT * FROM waitercomment")
     List<WaiterComment> selectAll();
 
-    @Select("SELECT * FROM waiterComment WHERE id = #{id}")
+    @Select("SELECT * FROM waitercomment WHERE id = #{id}")
     WaiterComment selectById(Integer id);
 
-    @Delete("DELETE FROM waiterComment WHERE id = #{id}")
-    int deleteById(Integer id);
-
-    @Insert("INSERT INTO waiterComment('comment', 'dateTime') VALUES (#{comment}, #{dateTime})")
-    int insert(WaiterComment waiterComment);
-
-    @Update("UPDATE waiterComment SET comment = #{comment}, dateTime = #{dateTime}")
-    int update(WaiterComment waiterComment);
+//    @Delete("DELETE FROM waitercomment WHERE id = #{id}")
+//    int deleteById(Integer id);
+//
+//    @Insert("INSERT INTO waitercomment('comment', 'dateTime') VALUES (#{comment}, #{dateTime})")
+//    int insert(WaiterComment waiterComment);
+//
+//    @Update("UPDATE waitercomment SET comment = #{comment}, dateTime = #{dateTime}")
+//    int update(WaiterComment waiterComment);
 }

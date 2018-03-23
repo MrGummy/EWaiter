@@ -10,7 +10,7 @@ public interface WaiterCommentDao
 {
     List<WaiterComment> selectAll();
     WaiterComment selectById(Integer id);
-    int deleteById(Integer id);
-    int insert(WaiterComment waiterComment);
-    int update(WaiterComment waiterComment);
+//    int deleteById(Integer id);
+//    int insert(WaiterComment waiterComment);
+//    int update(WaiterComment waiterComment);
 }

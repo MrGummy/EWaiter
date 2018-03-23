@@ -36,26 +36,26 @@ public class WaiterController
         return gson.toJson(waiterDao.selectById(waiterId));
     }
 
-    @RequestMapping(value ="/waiter/deleteById/{waiterId}",method  = RequestMethod.GET)
-    @ResponseBody
-    public String deleteById(@PathVariable(value="waiterId") int waiterId)
-    {
-        return waiterDao.deleteById(waiterId)+"";
-    }
-
-    @RequestMapping(value="/waiter/insertWaiter/{json}",method = RequestMethod.GET)
-    @ResponseBody
-    public String insert(@PathVariable(value="json") String json)
-    {
-        Waiter waiter = gson.fromJson(json,Waiter.class);
-        return waiterDao.insert(waiter)+"";
-    }
-
-    @RequestMapping(value="/waiter/updateWaiter/{json}",method = RequestMethod.GET)
-    @ResponseBody
-    public String update(@PathVariable(value="json") String json)
-    {
-        Waiter waiter = gson.fromJson(json,Waiter.class);
-        return waiterDao.update(waiter)+"";
-    }
+//    @RequestMapping(value ="/waiter/deleteById/{waiterId}",method  = RequestMethod.GET)
+//    @ResponseBody
+//    public String deleteById(@PathVariable(value="waiterId") int waiterId)
+//    {
+//        return waiterDao.deleteById(waiterId)+"";
+//    }
+//
+//    @RequestMapping(value="/waiter/insertWaiter/{json}",method = RequestMethod.GET)
+//    @ResponseBody
+//    public String insert(@PathVariable(value="json") String json)
+//    {
+//        Waiter waiter = gson.fromJson(json,Waiter.class);
+//        return waiterDao.insert(waiter)+"";
+//    }
+//
+//    @RequestMapping(value="/waiter/updateWaiter/{json}",method = RequestMethod.GET)
+//    @ResponseBody
+//    public String update(@PathVariable(value="json") String json)
+//    {
+//        Waiter waiter = gson.fromJson(json,Waiter.class);
+//        return waiterDao.update(waiter)+"";
+//    }
 }
