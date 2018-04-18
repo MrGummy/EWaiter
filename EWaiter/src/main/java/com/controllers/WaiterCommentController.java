@@ -36,26 +36,26 @@ public class WaiterCommentController
         return gson.toJson(waiterCommentDao.selectById(waiterCommentId));
     }
 
-//    @RequestMapping(value ="/waiterComment/deleteById/{waiterCommentId}",method  = RequestMethod.GET)
-//    @ResponseBody
-//    public String deleteById(@PathVariable(value="waiterCommentId") int waiterCommentId)
-//    {
-//        return waiterCommentDao.deleteById(waiterCommentId)+"";
-//    }
-//
-//    @RequestMapping(value="/waiterComment/insertWaiterComment/{json}",method = RequestMethod.GET)
-//    @ResponseBody
-//    public String insert(@PathVariable(value="json") String json)
-//    {
-//        WaiterComment waiterComment = gson.fromJson(json,WaiterComment.class);
-//        return waiterCommentDao.insert(waiterComment)+"";
-//    }
-//
-//    @RequestMapping(value="/waiterComment/updateWaiterComment/{json}",method = RequestMethod.GET)
-//    @ResponseBody
-//    public String update(@PathVariable(value="json") String json)
-//    {
-//        WaiterComment waiterComment = gson.fromJson(json,WaiterComment.class);
-//        return waiterCommentDao.update(waiterComment)+"";
-//    }
+    @RequestMapping(value ="/waiterComment/deleteById/{waiterCommentId}",method  = RequestMethod.GET)
+    @ResponseBody
+    public String deleteById(@PathVariable(value="waiterCommentId") int waiterCommentId)
+    {
+        return waiterCommentDao.deleteById(waiterCommentId)+"";
+    }
+
+    @RequestMapping(value="/waiterComment/insertWaiterComment/{json}",method = RequestMethod.GET)
+    @ResponseBody
+    public String insert(@PathVariable(value="json") String json)
+    {
+        WaiterComment waiterComment = gson.fromJson(json,WaiterComment.class);
+        return waiterCommentDao.insert(waiterComment)+"";
+    }
+
+    @RequestMapping(value="/waiterComment/updateWaiterComment/{json}",method = RequestMethod.GET)
+    @ResponseBody
+    public String update(@PathVariable(value="json") String json)
+    {
+        WaiterComment waiterComment = gson.fromJson(json,WaiterComment.class);
+        return waiterCommentDao.update(waiterComment)+"";
+    }
 }

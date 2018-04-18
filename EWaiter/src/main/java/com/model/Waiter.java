@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public class Waiter {
     private int id;
+    private Company company;
     private String firstName;
     private String lastName;
     private String login;
@@ -15,8 +16,9 @@ public class Waiter {
     public Waiter() {
     }
 
-    public Waiter(int id, String firstName, String lastName, String login, String password, String photo, List<WaiterComment> comments) {
+    public Waiter(int id, Company company, String firstName, String lastName, String login, String password, String photo, List<WaiterComment> comments) {
         this.id = id;
+        this.company = company;
         this.firstName = firstName;
         this.lastName = lastName;
         this.login = login;
@@ -31,6 +33,14 @@ public class Waiter {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 
     public String getFirstName() {
@@ -87,6 +97,7 @@ public class Waiter {
         if (o == null || getClass() != o.getClass()) return false;
         Waiter waiter = (Waiter) o;
         return id == waiter.id &&
+                Objects.equals(company, waiter.company) &&
                 Objects.equals(firstName, waiter.firstName) &&
                 Objects.equals(lastName, waiter.lastName) &&
                 Objects.equals(login, waiter.login) &&
@@ -98,13 +109,14 @@ public class Waiter {
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, firstName, lastName, login, password, photo, comments);
+        return Objects.hash(id, company, firstName, lastName, login, password, photo, comments);
     }
 
     @Override
     public String toString() {
         return "Waiter{" +
                 "id=" + id +
+                ", company=" + company +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", login='" + login + '\'' +

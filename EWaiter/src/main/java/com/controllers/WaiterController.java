@@ -29,33 +29,33 @@ public class WaiterController
         return gson.toJson(waiterDao.selectAll());
     }
 
-    @RequestMapping("/waiter/selectById/{waiterId}")
+    @RequestMapping("/waiter/selectById/{id}")
     @ResponseBody
-    public String selectById(@PathVariable(value="waiterId") int waiterId)
+    public String selectById(@PathVariable(value="id") int id)
     {
-        return gson.toJson(waiterDao.selectById(waiterId));
+        return gson.toJson(waiterDao.selectById(id));
     }
 
-//    @RequestMapping(value ="/waiter/deleteById/{waiterId}",method  = RequestMethod.GET)
-//    @ResponseBody
-//    public String deleteById(@PathVariable(value="waiterId") int waiterId)
-//    {
-//        return waiterDao.deleteById(waiterId)+"";
-//    }
-//
-//    @RequestMapping(value="/waiter/insertWaiter/{json}",method = RequestMethod.GET)
-//    @ResponseBody
-//    public String insert(@PathVariable(value="json") String json)
-//    {
-//        Waiter waiter = gson.fromJson(json,Waiter.class);
-//        return waiterDao.insert(waiter)+"";
-//    }
-//
-//    @RequestMapping(value="/waiter/updateWaiter/{json}",method = RequestMethod.GET)
-//    @ResponseBody
-//    public String update(@PathVariable(value="json") String json)
-//    {
-//        Waiter waiter = gson.fromJson(json,Waiter.class);
-//        return waiterDao.update(waiter)+"";
-//    }
+    @RequestMapping(value ="/waiter/deleteById/{waiterId}",method  = RequestMethod.GET)
+    @ResponseBody
+    public String deleteById(@PathVariable(value="waiterId") int waiterId)
+    {
+        return waiterDao.deleteById(waiterId)+"";
+    }
+
+    @RequestMapping(value="/waiter/insertWaiter/{json}",method = RequestMethod.GET)
+    @ResponseBody
+    public String insert(@PathVariable(value="json") String json)
+    {
+        Waiter waiter = gson.fromJson(json,Waiter.class);
+        return waiterDao.insert(waiter)+"";
+    }
+
+    @RequestMapping(value="/waiter/updateWaiter/{json}",method = RequestMethod.GET)
+    @ResponseBody
+    public String update(@PathVariable(value="json") String json)
+    {
+        Waiter waiter = gson.fromJson(json,Waiter.class);
+        return waiterDao.update(waiter)+"";
+    }
 }

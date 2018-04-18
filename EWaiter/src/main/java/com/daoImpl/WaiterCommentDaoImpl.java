@@ -25,18 +25,18 @@ public class WaiterCommentDaoImpl implements WaiterCommentDao {
         return waiterCommentMapper.selectById(id);
     }
 
-//    @Override
-//    public int deleteById(Integer id) {
-//        return waiterCommentMapper.deleteById(id);
-//    }
-//
-//    @Override
-//    public int insert(WaiterComment waiterComment) {
-//        return waiterCommentMapper.insert(waiterComment);
-//    }
-//
-//    @Override
-//    public int update(WaiterComment waiterComment) {
-//        return waiterCommentMapper.update(waiterComment);
-//    }
+    @Override
+    public int deleteById(Integer id) {
+        return waiterCommentMapper.deleteById(id);
+    }
+
+    @Override
+    public int insert(WaiterComment waiterComment) {
+        return waiterCommentMapper.insert(waiterComment);
+    }
+
+    @Override
+    public int update(WaiterComment waiterComment) {
+        return waiterCommentMapper.update(waiterComment);
+    }
 }

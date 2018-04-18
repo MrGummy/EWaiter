@@ -22,21 +22,22 @@ public class WaiterDaoImpl implements WaiterDao {
 
     @Override
     public Waiter selectById(Integer id) {
-        return waiterMapper.selectById(id);
+        Waiter waiter = waiterMapper.selectById(id);
+        return waiter;
     }
 
-//    @Override
-//    public int deleteById(Integer id) {
-//        return waiterMapper.deleteById(id);
-//    }
-//
-//    @Override
-//    public int insert(Waiter waiter) {
-//        return waiterMapper.insert(waiter);
-//    }
-//
-//    @Override
-//    public int update(Waiter waiter) {
-//        return waiterMapper.update(waiter);
-//    }
+    @Override
+    public int deleteById(Integer id) {
+        return waiterMapper.deleteById(id);
+    }
+
+    @Override
+    public int insert(Waiter waiter) {
+        return waiterMapper.insert(waiter);
+    }
+
+    @Override
+    public int update(Waiter waiter) {
+        return waiterMapper.update(waiter);
+    }
 }

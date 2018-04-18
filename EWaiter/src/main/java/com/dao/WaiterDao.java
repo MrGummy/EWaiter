@@ -10,7 +10,7 @@ public interface WaiterDao
 {
     List<Waiter> selectAll();
     Waiter selectById(Integer id);
-//    int deleteById(Integer id);
-//    int insert(Waiter waiter);
-//    int update(Waiter waiter);
+    int deleteById(Integer id);
+    int insert(Waiter waiter);
+    int update(Waiter waiter);
 }
