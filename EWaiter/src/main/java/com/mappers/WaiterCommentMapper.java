@@ -11,7 +11,8 @@ public interface WaiterCommentMapper {
     @Results({
             @Result(property = "id", column = "id"),
             @Result(property = "comment", column = "comment"),
-            @Result(property = "dateTime", column = "dateTime")
+            @Result(property = "dateTime", column = "dateTime"),
+            @Result(property = "waiterId", column = "waiterId")
     })
 
     @Select("SELECT * FROM waitercomment WHERE waiterId = #{waiterId}")
@@ -26,9 +27,9 @@ public interface WaiterCommentMapper {
     @Delete("DELETE FROM waitercomment WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO waitercomment('comment', 'dateTime') VALUES (#{comment}, #{dateTime})")
+    @Insert("INSERT INTO waitercomment(comment, dateTime, waiterId) VALUES (#{comment}, #{dateTime}, #{waiterId})")
     int insert(WaiterComment waiterComment);
 
-    @Update("UPDATE waitercomment SET comment = #{comment}, dateTime = #{dateTime}")
+    @Update("UPDATE waitercomment SET comment = #{comment}, dateTime = #{dateTime}, waiterId = #{waiterId}")
     int update(WaiterComment waiterComment);
 }

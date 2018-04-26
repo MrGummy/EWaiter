@@ -7,14 +7,16 @@ public class DishComment {
     private int id;
     private String comment;
     private Timestamp dateTime;
+    private int dishId;
 
     public DishComment() {
     }
 
-    public DishComment(int id, String comment, Timestamp dateTime) {
+    public DishComment(int id, String comment, Timestamp dateTime, int dishId) {
         this.id = id;
         this.comment = comment;
         this.dateTime = dateTime;
+        this.dishId = dishId;
     }
 
     public int getId() {
@@ -33,12 +35,20 @@ public class DishComment {
         this.comment = comment;
     }
 
-    public Timestamp getDate() {
+    public Timestamp getDateTime() {
         return dateTime;
     }
 
-    public void setDate(Timestamp dateTime) {
+    public void setDateTime(Timestamp dateTime) {
         this.dateTime = dateTime;
+    }
+
+    public int getDishId() {
+        return dishId;
+    }
+
+    public void setDishId(int dishId) {
+        this.dishId = dishId;
     }
 
     @Override
@@ -47,6 +57,7 @@ public class DishComment {
         if (o == null || getClass() != o.getClass()) return false;
         DishComment that = (DishComment) o;
         return id == that.id &&
+                dishId == that.dishId &&
                 Objects.equals(comment, that.comment) &&
                 Objects.equals(dateTime, that.dateTime);
     }
@@ -54,7 +65,7 @@ public class DishComment {
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, comment, dateTime);
+        return Objects.hash(id, comment, dateTime, dishId);
     }
 
     @Override
@@ -63,6 +74,7 @@ public class DishComment {
                 "id=" + id +
                 ", comment='" + comment + '\'' +
                 ", dateTime=" + dateTime +
+                ", dishId=" + dishId +
                 '}';
     }
 }
