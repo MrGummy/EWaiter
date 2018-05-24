@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EWaiter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/css/style.css" rel="stylesheet">
+        <link href="company.css" rel="stylesheet">
+        <script src="controllers/page/CompanyPageController.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar navbar-default">
+                    <header id="header-site">
+
+                        <div class="logo-site">
+                            <img src="images/logo2.png" style="width: 100%;"/>
+                        </div>
+
+                        <!--Begin::Mobile View Navigation-->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--End::Mobile View Navigation-->
+
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation" onclick="clickNavbarMenu()">
+            <div class="navbar-toggler animate">
+                <span class="menu-icon"></span>
+            </div>
+            <ul class="navbar-menu animate">
+                <li>
+                    <a href="#about-us" class="animate">
+                        <span class="desc animate"> Меню </span>
+                        <div class="navigatorIcon1"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog" class="animate">
+                        <span class="desc animate"> Официанты </span>
+                        <div class="navigatorIcon2"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact-us" class="animate">
+                        <span class="desc animate"> Отзывы </span>
+                        <div class="navigatorIcon3"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact-us" class="animate">
+                        <span class="desc animate"> Настройки </span>
+                        <div class="navigatorIcon4"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row sections-child container-fluid">
+            <div class="row post-content">
+                <div class="sectionsImg1"></div>
+                <div class="sectionsLabel">
+                    <label>Меню</label>
+                </div>
+            </div>
+            <div class="row post-content">
+                <div class="sectionsImg2"></div>
+                <div class="sectionsLabel">
+                    <label>Официанты</label>
+                </div>
+            </div>
+        </div>
+        <div class="row sections-child container-fluid">
+            <div class="row post-content">
+                <div class="sectionsImg3"></div>
+                <div class="sectionsLabel">
+                    <label>Отзывы</label>
+                </div>
+            </div>
+            <div class="row post-content">
+                <div class="sectionsImg4"></div>
+                <div class="sectionsLabel">
+                    <label>Настройки</label>
+                </div>
+            </div>
+        </div>
+
+        <script src="lib/js/jquery.min.js"></script>
+        <script src="lib/js/bootstrap.min.js"></script>
+    </body>
+</html>
