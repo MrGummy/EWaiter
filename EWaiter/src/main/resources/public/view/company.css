@@ -4,16 +4,13 @@ body {
     font-size: 13px;
     font-style: normal;
     font-weight: normal;
-    line-height: 22px;
-    white-space: normal;
 }
 #header-site {
     text-align: center;
     background: #262727;
     border-bottom: 2px solid #cf4137;
-    float: left;
     position: absolute;
-    top: -1px;
+    margin-top: -1px;
     width: 100%;
     opacity: 0.9;
 }
@@ -46,6 +43,10 @@ body {
     background: #9eca3b;
     color: #262727;
     cursor: pointer;
+}
+
+.post-content:active {
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 }
 
 .hh {

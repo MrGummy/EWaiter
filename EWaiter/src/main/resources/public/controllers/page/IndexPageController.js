@@ -15,7 +15,7 @@ async function loginClick()
             document.cookie = "login=" + login + ";path=/";
             document.cookie = "password=" + password + ";path=/";
 
-            document.location.href = "view/company.html/";
+            document.location.href = "view/company.html";
             return;
         }
     }

@@ -1,5 +1,6 @@
 body {
     background-image: url('images/bg.jpg');
+    padding: 0;
     font-family: "Open Sans",sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -14,6 +15,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    opacity: 0.9;
 }
 .logo-site {
     float: left;
@@ -162,7 +164,6 @@ body {
     border: 2px solid #cf4137;
     margin-top: 30px;
     padding: 20px 10px 20px 10px;
-    border-radius: 10px;
     font-size: 16px;
     left: 50%;
     top: 50%;
@@ -170,6 +171,7 @@ body {
     -webkit-transform: translate3d(-50%, -50%, 0);
     -moz-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
+    opacity: 0.9;
 }
 
 .hh {
