@@ -31,6 +31,11 @@ public class MenuDaoImpl implements MenuDao {
     }
 
     @Override
+    public List<Menu> selectByCompanyId(Integer id) {
+        return menuMapper.selectByCompanyId(id);
+    }
+
+    @Override
     public int insert(Menu menu) {
         return menuMapper.insert(menu);
     }

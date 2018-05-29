@@ -10,16 +10,18 @@ public class Menu {
     private String description;
     private List<Category> categories;
     private Date date;
+    private String photo;
 
     public Menu() {
     }
 
-    public Menu(int id, String name, String description, List<Category> categories, Date date) {
+    public Menu(int id, String name, String description, List<Category> categories, Date date, String photo) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.categories = categories;
         this.date = date;
+        this.photo = photo;
     }
 
     public int getId() {
@@ -62,6 +64,14 @@ public class Menu {
         this.date = date;
     }
 
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -71,13 +81,14 @@ public class Menu {
                 Objects.equals(name, menu.name) &&
                 Objects.equals(description, menu.description) &&
                 Objects.equals(categories, menu.categories) &&
-                Objects.equals(date, menu.date);
+                Objects.equals(date, menu.date) &&
+                Objects.equals(photo, menu.photo);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, name, description, categories, date);
+        return Objects.hash(id, name, description, categories, date, photo);
     }
 
     @Override
@@ -88,6 +99,7 @@ public class Menu {
                 ", description='" + description + '\'' +
                 ", categories=" + categories +
                 ", date=" + date +
+                ", photo='" + photo + '\'' +
                 '}';
     }
 }

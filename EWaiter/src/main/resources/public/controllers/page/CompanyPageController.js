@@ -4,3 +4,7 @@ function clickNavbarMenu() {
         $(this).closest('.navbar-minimal').toggleClass('open');
     })
 };
+
+function menuClick() {
+    document.location.href = "/view/menu.html";
+}

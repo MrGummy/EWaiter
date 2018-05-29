@@ -4,17 +4,16 @@ class MenuController {
         this.templateMenu = new TemplateMenu();
     }
 
-    getAllMenu() {
-        return this.menuService.getAllMenu();
+    getMenuByCompanyId(id) {
+        return this.menuService.getMenuByCompanyId(id);
     }
 
     getTemlateMenu() {
         return this.templateMenu.templ();
     }
 
-    async getAllMenuView() {
-        let response = await this.getAllMenu();
-        var menus = JSON.parse(response);
+    async getCompanyMenu(json) {
+        var menus = JSON.parse(json);
 
         var template = this.getTemlateMenu();
         var compiledTemplate = Template7.compile(template);

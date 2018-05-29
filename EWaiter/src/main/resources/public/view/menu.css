@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/backgrounds/bg.jpg');
     font-family: "Open Sans",sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -41,7 +41,7 @@ body {
 }
 
 .post-content:active {
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 0px 10px #9eca3b;
 }
 
 .hh {
@@ -63,9 +63,8 @@ p {
     font-size: 12pt;
 }
 
-.sectionsImg1 {
-    background-size: 100%;
-    background-repeat: no-repeat;
+.menuImg {
+    background-size: cover;
     background: silver;
     margin: 0px 10px 2px 0;
     display: inline-block;
@@ -237,15 +236,15 @@ p {
     }
 
     .navigatorIcon1 {
-        background-image: url("../images/MenuIcon.png");
+        background-image: url("../images/icons/MenuIcon.png");
     }
 
     .navigatorIcon2 {
-        background-image: url("../images/WaiterIcon.png");
+        background-image: url("../images/icons/WaiterIcon.png");
     }
 
     .navigatorIcon3 {
-        background-image: url("../images/CommentIcon.png");
+        background-image: url("../images/icons/CommentIcon.png");
         width: 30px !important;
         height: 22px !important;
         margin-top: 8px;
@@ -254,7 +253,7 @@ p {
     }
 
     .navigatorIcon4 {
-        background-image: url("../images/SettingsIcon.png");
+        background-image: url("../images/icons/SettingsIcon.png");
         width: 30px !important;
         height: 28px !important;
         margin-top: 2px;

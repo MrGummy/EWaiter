@@ -1,9 +1,9 @@
 class MenuService {
 
-    getAllMenu() {
+    getMenuByCompanyId(id) {
         return $.ajax({
             type: "GET",
-            url: "http://localhost:8080/menu/selectAll",
+            url: "http://localhost:8080/menu/selectByCompanyId/" + id + "",
             async: true
         });
     }

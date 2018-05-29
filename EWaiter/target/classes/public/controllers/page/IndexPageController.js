@@ -14,8 +14,17 @@ async function loginClick()
 
             document.cookie = "login=" + login + ";path=/";
             document.cookie = "password=" + password + ";path=/";
+            document.cookie = "company=" + JSON.stringify(companies[i]) + ";path=/";
 
-            document.location.href = "view/company.html";
+            // $.ajax({
+            //     type: "POST",
+            //     url: "http://localhost:8080/view/company.html",
+                 //data: {request:companies[i]},
+            //     async: true
+            // });
+
+            document.location.href = "/view/company.html";
+
             return;
         }
     }

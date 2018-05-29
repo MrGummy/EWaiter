@@ -1,5 +1,7 @@
+body > section:not(.active) { display:none; }
+
 body {
-    background-image: url('images/bg.jpg');
+    background-image: url('images/backgrounds/bg.jpg');
     padding: 0;
     font-family: "Open Sans",sans-serif;
     font-size: 13px;

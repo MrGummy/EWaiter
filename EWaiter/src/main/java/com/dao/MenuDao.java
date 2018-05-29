@@ -10,6 +10,7 @@ public interface MenuDao
 {
     List<Menu> selectAll();
     Menu selectById(Integer id);
+    List<Menu> selectByCompanyId(Integer id);
     int deleteById(Integer id);
     int insert(Menu menu);
     int update(Menu menu);

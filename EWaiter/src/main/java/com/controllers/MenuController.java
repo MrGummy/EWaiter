@@ -36,6 +36,13 @@ public class MenuController
         return gson.toJson(menuDao.selectById(menuId));
     }
 
+    @RequestMapping("/menu/selectByCompanyId/{companyId}")
+    @ResponseBody
+    public String selectByCompanyId(@PathVariable(value="companyId") int companyId)
+    {
+        return gson.toJson(menuDao.selectByCompanyId(companyId));
+    }
+
     @RequestMapping(value ="/menu/deleteById/{menuId}",method  = RequestMethod.GET)
     @ResponseBody
     public String deleteById(@PathVariable(value="menuId") int menuId)
