@@ -1,6 +1,5 @@
 class CategoryController {
     constructor() {
-        this.categoryService = new CategoryService();
         this.categoryTemplate = new CategoryTemplate();
     }
 

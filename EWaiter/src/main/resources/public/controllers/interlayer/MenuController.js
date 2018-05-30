@@ -1,11 +1,6 @@
 class MenuController {
     constructor() {
-        this.menuService = new MenuService();
         this.templateMenu = new TemplateMenu();
-    }
-
-    getMenuByCompanyId(id) {
-        return this.menuService.getMenuByCompanyId(id);
     }
 
     getTemlateMenu() {

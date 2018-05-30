@@ -2,63 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1305c6b7-e182-4436-ad18-59d038f33bef" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CategoryPageController.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/author.htm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/SPA.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.htm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.htm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.htm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.htm" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/java/com/controllers/MenuController.java" afterPath="$PROJECT_DIR$/EWaiter/src/main/java/com/controllers/MenuController.java" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/java/com/dao/MenuDao.java" afterPath="$PROJECT_DIR$/EWaiter/src/main/java/com/dao/MenuDao.java" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/java/com/daoImpl/MenuDaoImpl.java" afterPath="$PROJECT_DIR$/EWaiter/src/main/java/com/daoImpl/MenuDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/java/com/mappers/MenuMapper.java" afterPath="$PROJECT_DIR$/EWaiter/src/main/java/com/mappers/MenuMapper.java" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/java/com/model/Menu.java" afterPath="$PROJECT_DIR$/EWaiter/src/main/java/com/model/Menu.java" />
       <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/CategoryController.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/CategoryController.js" />
       <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/MenuController.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/MenuController.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CompanyPageController.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CompanyPageController.js" />
       <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/IndexPageController.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/IndexPageController.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/MenuPageController.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/MenuPageController.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/TemplateCategory.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/CategoryTemplate.js" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/CategoryTemplate.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/CategoryTemplate.js" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/DishTemplate.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/DishTemplate.js" />
       <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/TemplateMenu.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/TemplateMenu.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/CommentIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/CommentIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/MenuIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/MenuIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/SettingsIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/SettingsIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/WaiterIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/WaiterIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/images/bg.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.css" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.css" />
       <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.html" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/services/MenuService.js" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/services/MenuService.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.css" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.css" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.html" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.html" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.css" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.css" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/com/controllers/MenuController.class" afterPath="$PROJECT_DIR$/EWaiter/target/classes/com/controllers/MenuController.class" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/com/dao/MenuDao.class" afterPath="$PROJECT_DIR$/EWaiter/target/classes/com/dao/MenuDao.class" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/com/daoImpl/MenuDaoImpl.class" afterPath="$PROJECT_DIR$/EWaiter/target/classes/com/daoImpl/MenuDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/com/mappers/MenuMapper.class" afterPath="$PROJECT_DIR$/EWaiter/target/classes/com/mappers/MenuMapper.class" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/com/model/Menu.class" afterPath="$PROJECT_DIR$/EWaiter/target/classes/com/model/Menu.class" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.css" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/category.css" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.html" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/category.html" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.css" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/company.css" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.html" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/company.html" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.css" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/dishes.css" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.html" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/dishes.html" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.css" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/menu.css" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.html" afterPath="$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/menu.html" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/interlayer/CategoryController.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/interlayer/CategoryController.js" />
       <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/interlayer/MenuController.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/interlayer/MenuController.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/page/CompanyPageController.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/page/CompanyPageController.js" />
       <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/page/IndexPageController.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/page/IndexPageController.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/page/MenuPageController.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/page/MenuPageController.js" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/template/CategoryTemplate.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/template/CategoryTemplate.js" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/template/DishTemplate.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/template/DishTemplate.js" />
       <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/template/TemplateMenu.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/controllers/template/TemplateMenu.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/CommentIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/CommentIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/MenuIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/MenuIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/SettingsIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/SettingsIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/WaiterIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/WaiterIconHover.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/images/bg.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/index.css" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/index.css" />
       <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/index.html" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/lib/js/framework7.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/services/MenuService.js" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/services/MenuService.js" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/view/company.css" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/view/company.css" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/view/company.html" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/view/company.html" />
-      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/view/menu.css" afterPath="$PROJECT_DIR$/EWaiter/target/classes/public/view/menu.css" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/view/company.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/view/company.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/EWaiter/target/classes/public/view/menu.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/EWaiter/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.html">
+      <file leaf-file-name="IndexPageController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/IndexPageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="371">
+              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,68 +68,40 @@
       <file leaf-file-name="DishTemplate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/DishTemplate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <marker date="1527710968036" expanded="true" signature="497:512" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompanyPageController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CompanyPageController.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuPageController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/MenuPageController.js">
+      <file leaf-file-name="dishes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/dishes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="116">
+              <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dishes.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="63" column="50" lean-forward="false" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dishes.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DishPageController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/DishPageController.js">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="78" lean-forward="false" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryPageController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CategoryPageController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+              <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -166,9 +115,9 @@
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -220,19 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EWaiter/src/main/java/com/model/DishComment.java" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/CompanyController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/CategoryController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/DishController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/DishCommentController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/DishPhotoController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/MenuController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/OrderController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/TableController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/WaiterCommentController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/controllers/WaiterController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/java/com/mappers/CompanyMapper.java" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/CategoryController.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/PageCategory.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/services/CategoryService.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/application.properties" />
@@ -251,26 +187,39 @@
         <option value="$PROJECT_DIR$/EWaiter/src/main/java/com/controllers/MenuController.java" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/services/MenuService.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/index.html" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.css" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CompanyPageController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.css" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.css" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/TemplateCategory.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/IndexPageController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/CategoryController.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.html" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.css" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/CategoryTemplate.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.css" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.html" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CategoryPageController.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/DishPageController.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/DishController.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/DishTemplate.js" />
-        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/MenuController.js" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/MenuPageController.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/section.html" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/section.htm" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/contact.htm" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/categorye.html" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/men.html" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/author.htm" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.htm" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/MenuController.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.css" />
         <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/TemplateMenu.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/categor.html" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.css" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/CategoryController.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/SPA.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.htm" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.htm" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/CategoryTemplate.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dis.html" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dish.htm" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.html" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/DishTemplate.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/IndexPageController.js" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.css" />
+        <option value="$PROJECT_DIR$/EWaiter/src/main/resources/public/index.html" />
       </list>
     </option>
   </component>
@@ -331,18 +280,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="EWaiter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="EWaiter" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,13 +332,25 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="EWaiter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="EWaiter" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/spapp-master/demo" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="project.structure.last.edited" value="Project" />
@@ -410,8 +359,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mappers" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Graduation\EWaiter\src\main\resources\public\html\css" />
+      <recent name="F:\Graduation\EWaiter\src\main\resources\public\controllers\template" />
+      <recent name="F:\EWaiter\EWaiter\src\main\resources\public\controllers\interlayer" />
+      <recent name="F:\EWaiter\EWaiter\src\main\resources\public\lib\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\EWaiter\EWaiter\src\main\resources\public" />
@@ -419,10 +371,8 @@
       <recent name="C:\Users\Glover\Documents\EWaiter\EWaiter\src\main\resources\services" />
       <recent name="C:\Users\Glover\Documents\EWaiter\EWaiter\src\main\resources\lib" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Graduation\EWaiter\src\main\resources\public\controllers\template" />
-      <recent name="F:\EWaiter\EWaiter\src\main\resources\public\controllers\interlayer" />
-      <recent name="F:\EWaiter\EWaiter\src\main\resources\public\lib\js" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mappers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -596,11 +546,12 @@
       <workItem from="1527226458416" duration="1172000" />
       <workItem from="1527310724432" duration="12255000" />
       <workItem from="1527487825937" duration="34060000" />
+      <workItem from="1527690550056" duration="20900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213279000" />
+    <option name="totallyTimeSpent" value="234179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -623,7 +574,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28188977" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="5" y="262" width="1356" height="203" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28188977" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="5" y="262" width="1356" height="203" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21669106" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -656,12 +607,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/services/WaiterCommentService.js" />
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/services/WaiterService.js" />
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/services/OrderService.js" />
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/services/MenuService.js" />
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/controllers/OrderController.js" />
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/services/CategoryService.js" />
     <entry file="file://$PROJECT_DIR$/EWaiter/src/main/java/com/dao/CategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -838,114 +783,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="285" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/index.html" />
     <entry file="file://$PROJECT_DIR$/EWaiter/src/main/java/com/model/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/CategoryTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="76" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="269" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/IndexPageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/CategoryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CategoryPageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -958,19 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/DishPageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="78" lean-forward="false" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EWaiter/src/main/java/com/model/Dish.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,14 +811,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="88" column="58" lean-forward="true" selection-start-line="88" selection-start-column="58" selection-end-line="88" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/company.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="258" column="62" lean-forward="false" selection-start-line="258" selection-start-column="62" selection-end-line="258" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="80" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/company.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CompanyPageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/MenuController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/author.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="25" column="111" lean-forward="false" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1251">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -998,42 +886,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/MenuPageController.js">
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.html">
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/interlayer/CategoryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/SPA.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/category.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2056">
+          <caret line="91" column="1" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="91" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CategoryPageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/MenuPageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/category.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/menu.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/dishes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="81" column="1" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="81" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/DishPageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/CategoryTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/template/DishTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <marker date="1527710968036" expanded="true" signature="497:512" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/html/css/dishes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/CompanyPageController.js">
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/controllers/page/IndexPageController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="371">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/view/dishes.html">
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="63" column="50" lean-forward="false" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EWaiter/src/main/resources/public/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/backgrounds/bg.jpg');
+    background-image: url('../../images/backgrounds/bg.jpg');
     font-family: "Open Sans",sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -21,41 +21,27 @@ body {
     width: 80px;
 }
 
-.categoryList {
+.sections-child {
     text-align: center;
 }
 
-.sections-child {
-    width: 600px;
-    display: inline-block;
-}
-
 .post-content {
+    text-align: center;
     display: inline-block;
     background: #262727;
     border-bottom: 2px solid #cf4137;
     margin: 50px 25px 0px 25px;
-    padding: 10px;
+    padding: 15px 10px 20px 15px;
     font-size: 16px;
     vertical-align: middle;
-    width: 200px;
+    width: 600px;
     height: 200px;
-    color: #fff;
+    color: #262727;
     opacity: 0.9;
 }
 
-.post-content:hover {
-    background: #9eca3b;
-    cursor: pointer;
-}
-
-.post-content:hover .sectionsLabel{
-    background: rgba(158, 202, 59, 0.9);
-    cursor: pointer;
-}
-
 .post-content:active {
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 0px 10px #9eca3b;
 }
 
 .hh {
@@ -64,23 +50,27 @@ body {
 }
 
 .sectionsLabel {
-    background: rgba(38, 39, 39, 0.9);
+    background: #fff;
+    display: inline-block;
+    padding: 10px;
     font-size: 16pt;
-    padding-top: 15px;
-    width: 180px;
-    height: 60px;
-    position: absolute;
-    top: 31%;
+    text-align: left;
+    width: 380px;
+    height: 170px;
 }
 
-.categoryImg {
+p {
+    font-size: 12pt;
+}
+
+.menuImg {
     background-size: cover;
     background: silver;
-    margin: 0;
+    margin: 0px 10px 2px 0;
     display: inline-block;
     float: left;
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
 }
 
 .animate {
@@ -246,15 +236,15 @@ body {
     }
 
     .navigatorIcon1 {
-        background-image: url("../images/icons/MenuIcon.png");
+        background-image: url("../../images/icons/MenuIcon.png");
     }
 
     .navigatorIcon2 {
-        background-image: url("../images/icons/WaiterIcon.png");
+        background-image: url("../../images/icons/WaiterIcon.png");
     }
 
     .navigatorIcon3 {
-        background-image: url("../images/icons/CommentIcon.png");
+        background-image: url("../../images/icons/CommentIcon.png");
         width: 30px !important;
         height: 22px !important;
         margin-top: 8px;
@@ -263,7 +253,7 @@ body {
     }
 
     .navigatorIcon4 {
-        background-image: url("../images/icons/SettingsIcon.png");
+        background-image: url("../../images/icons/SettingsIcon.png");
         width: 30px !important;
         height: 28px !important;
         margin-top: 2px;

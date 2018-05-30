@@ -4,13 +4,10 @@
         <meta charset="utf-8">
         <title>EWaiter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../lib/css/style.css" rel="stylesheet">
-        <link href="dishes.css" rel="stylesheet">
-        <script src="../controllers/page/DishPageController.js"></script>
-        <script src="../controllers/interlayer/DishController.js"></script>
-        <script src="../controllers/template/DishTemplate.js"></script>
-        <script src="../services/DishService.js"></script>
+        <link href="../../lib/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../lib/css/style.css" rel="stylesheet">
+        <link href="company.css" rel="stylesheet">
+        <script src="../../controllers/page/CompanyPageController.js"></script>
     </head>
     <body>
         <div class="row">
@@ -18,7 +15,7 @@
                 <header id="header-site">
 
                     <div class="logo-site">
-                        <img src="../images/Logo2.png" style="width: 100%;"/>
+                        <img src="../../images/Logo2.png" style="width: 100%;"/>
                     </div>
 
                 </header>
@@ -31,7 +28,7 @@
             </div>
             <ul class="navbar-menu animate">
                 <li>
-                    <a href="#about-us" class="animate">
+                    <a class="animate" onclick="menuClick()">
                         <span class="desc animate"> Меню </span>
                         <div class="navigatorIcon1"></div>
                     </a>
@@ -57,20 +54,38 @@
             </ul>
         </nav>
 
-        <div id="dishContainer" class="row sections-child container-fluid">
+        <div class="row sections-child container-fluid">
+            <a class="animate" onclick="menuClick()">
+                <div class="row post-content">
+                    <div class="sectionsImg1"></div>
+                    <div class="sectionsLabel">
+                        <label>Меню</label>
+                    </div>
+                </div>
+            </a>
             <div class="row post-content">
-                <div class="dishImg"></div>
+                <div class="sectionsImg2"></div>
                 <div class="sectionsLabel">
-                    <label>Название: Блюдо</label>
-                    <p><b>Описание:</b> Описание блюда</p>
-                    <p><b>Вес:</b> 000 гр.</p>
-                    <p><b>        Цена:</b> 000 <img src="../images/ruble.gif" class="ruble-img" /><span class="dot">руб.</span></p>
+                    <label>Официанты</label>
+                </div>
+            </div>
+        </div>
+        <div class="row sections-child container-fluid">
+            <div class="row post-content">
+                <div class="sectionsImg3"></div>
+                <div class="sectionsLabel">
+                    <label>Отзывы</label>
+                </div>
+            </div>
+            <div class="row post-content">
+                <div class="sectionsImg4"></div>
+                <div class="sectionsLabel">
+                    <label>Настройки</label>
                 </div>
             </div>
         </div>
 
-        <script src="../lib/js/jquery.min.js"></script>
-        <script src="../lib/js/bootstrap.min.js"></script>
-        <script src="../lib/js/template7.min.js"></script>
+        <script src="../../lib/js/jquery.min.js"></script>
+        <script src="../../lib/js/bootstrap.min.js"></script>
     </body>
 </html>

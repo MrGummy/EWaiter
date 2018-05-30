@@ -1,5 +1,13 @@
+img.ruble-img {
+    height: 1.5ex;
+}
+
+span.dot {
+    position:absolute; text-indent: -1000em;
+}
+
 body {
-    background-image: url('../images/backgrounds/bg.jpg');
+    background-image: url('../../images/backgrounds/bg.jpg');
     font-family: "Open Sans",sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -63,7 +71,7 @@ p {
     font-size: 12pt;
 }
 
-.menuImg {
+.dishImg {
     background-size: cover;
     background: silver;
     margin: 0px 10px 2px 0;
@@ -236,15 +244,15 @@ p {
     }
 
     .navigatorIcon1 {
-        background-image: url("../images/icons/MenuIcon.png");
+        background-image: url("../../images/icons/MenuIcon.png");
     }
 
     .navigatorIcon2 {
-        background-image: url("../images/icons/WaiterIcon.png");
+        background-image: url("../../images/icons/WaiterIcon.png");
     }
 
     .navigatorIcon3 {
-        background-image: url("../images/icons/CommentIcon.png");
+        background-image: url("../../images/icons/CommentIcon.png");
         width: 30px !important;
         height: 22px !important;
         margin-top: 8px;
@@ -253,7 +261,7 @@ p {
     }
 
     .navigatorIcon4 {
-        background-image: url("../images/icons/SettingsIcon.png");
+        background-image: url("../../images/icons/SettingsIcon.png");
         width: 30px !important;
         height: 28px !important;
         margin-top: 2px;

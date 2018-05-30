@@ -1,3 +1,22 @@
+var company;
+var menu;
+var category;
+
+$(window).onload(function () {
+    document.location.href = "#author";
+});
+
+$(document).ready(function() {
+    document.getElementById("navigator").style.visibility = "hidden";
+});
+
+function clickNavbarMenu() {
+    $('.navbar-toggler').on('click', function(event) {
+        event.preventDefault();
+        $(this).closest('.navbar-minimal').toggleClass('open');
+    })
+};
+
 async function loginClick()
 {
     var controller = new CompanyController();
@@ -12,9 +31,9 @@ async function loginClick()
         {
             //document.getElementById("modalWindow").click();
 
+            company = companies[i];
             document.cookie = "login=" + login + ";path=/";
             document.cookie = "password=" + password + ";path=/";
-            document.cookie = "company=" + JSON.stringify(companies[i]) + ";path=/";
 
             // $.ajax({
             //     type: "POST",
@@ -23,7 +42,8 @@ async function loginClick()
             //     async: true
             // });
 
-            document.location.href = "/view/company.html";
+            document.location.href = "#company";
+            document.getElementById("navigator").style.visibility = "visible";
 
             return;
         }
@@ -35,4 +55,48 @@ async function loginClick()
     else {
         alert("Вход не выполнен. Проверьте введенные данные!");
     }
+}
+
+async function allMenuClick() {
+    document.location.href = "#menu";
+
+    var controller = new MenuController();
+    let html = await controller.getCompanyMenu(JSON.stringify(company.menus));
+
+    var element = document.getElementById("contentContainer");
+    element.innerHTML = html;
+};
+
+async function oneMenuClick(menuId) {
+
+    for (var i = 0; i < company.menus.length; i++) {
+        if (menuId == company.menus[i].id) {
+            menu = company.menus[i];
+        }
+    }
+
+    document.location.href = "#category";
+
+    var controller = new CategoryController();
+    let html = await controller.getMenuCategory(JSON.stringify(menu.categories));
+
+    var element = document.getElementById("contentContainer");
+    element.innerHTML = html;
+}
+
+async function categoryClick(categoryId) {
+
+    for (var i = 0; i < menu.categories.length; i++) {
+        if (categoryId == menu.categories[i].id) {
+            category = menu.categories[i];
+        }
+    }
+
+    document.location.href = "#dishes";
+
+    var controller = new DishController();
+    let html = await controller.getCategoryDish(JSON.stringify(category.dishes));
+
+    var element = document.getElementById("contentContainer");
+    element.innerHTML = html;
 }

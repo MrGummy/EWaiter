@@ -1,13 +1,5 @@
-img.ruble-img {
-    height: 1.5ex;
-}
-
-span.dot {
-    position:absolute; text-indent: -1000em;
-}
-
 body {
-    background-image: url('../images/backgrounds/bg.jpg');
+    background-image: url('../../images/backgrounds/bg.jpg');
     font-family: "Open Sans",sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -34,22 +26,27 @@ body {
 }
 
 .post-content {
-    text-align: center;
     display: inline-block;
     background: #262727;
     border-bottom: 2px solid #cf4137;
     margin: 50px 25px 0px 25px;
-    padding: 15px 10px 20px 15px;
+    padding: 20px 10px 20px 10px;
     font-size: 16px;
     vertical-align: middle;
-    width: 600px;
+    width: 200px;
     height: 200px;
-    color: #262727;
+    color: #fff;
     opacity: 0.9;
 }
 
+.post-content:hover {
+    background: #9eca3b;
+    color: #262727;
+    cursor: pointer;
+}
+
 .post-content:active {
-    box-shadow: inset 0px 0px 10px #9eca3b;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 }
 
 .hh {
@@ -58,27 +55,38 @@ body {
 }
 
 .sectionsLabel {
-    background: #fff;
-    display: inline-block;
-    padding: 10px;
     font-size: 16pt;
-    text-align: left;
-    width: 380px;
-    height: 170px;
+    line-height: 30px;
+    width: 100%;
 }
 
-p {
-    font-size: 12pt;
+.sectionsImg1 {
+    background-image: url("../../images/icons/MenuIcon.png");
 }
 
-.dishImg {
-    background-size: cover;
-    background: silver;
-    margin: 0px 10px 2px 0;
+.sectionsImg2 {
+    background-image: url("../../images/icons/WaiterIcon.png");
+}
+
+.sectionsImg3 {
+    background-image: url("../../images/icons/CommentIcon.png");
+    width: 150px !important;
+    line-height: 200px;
+}
+
+.sectionsImg4 {
+    background-image: url("../../images/icons/SettingsIcon.png");
+    width: 110px !important;
+    line-height: 200px;
+}
+
+.sectionsImg1, .sectionsImg2, .sectionsImg3, .sectionsImg4 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 2px 0 2px 0;
     display: inline-block;
-    float: left;
-    width: 170px;
-    height: 170px;
+    width: 60px;
+    height: 110px;
 }
 
 .animate {
@@ -244,15 +252,15 @@ p {
     }
 
     .navigatorIcon1 {
-        background-image: url("../images/icons/MenuIcon.png");
+        background-image: url("../../images/icons/MenuIcon.png");
     }
 
     .navigatorIcon2 {
-        background-image: url("../images/icons/WaiterIcon.png");
+        background-image: url("../../images/icons/WaiterIcon.png");
     }
 
     .navigatorIcon3 {
-        background-image: url("../images/icons/CommentIcon.png");
+        background-image: url("../../images/icons/CommentIcon.png");
         width: 30px !important;
         height: 22px !important;
         margin-top: 8px;
@@ -261,7 +269,7 @@ p {
     }
 
     .navigatorIcon4 {
-        background-image: url("../images/icons/SettingsIcon.png");
+        background-image: url("../../images/icons/SettingsIcon.png");
         width: 30px !important;
         height: 28px !important;
         margin-top: 2px;

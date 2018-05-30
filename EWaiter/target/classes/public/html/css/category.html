@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <title>EWaiter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../lib/css/style.css" rel="stylesheet">
-        <link href="menu.css" rel="stylesheet">
-        <script src="../controllers/page/MenuPageController.js"></script>
-        <script src="../controllers/interlayer/MenuController.js"></script>
-        <script src="../controllers/template/TemplateMenu.js"></script>
-        <script src="../services/MenuService.js"></script>
+        <link href="../../lib/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../lib/css/style.css" rel="stylesheet">
+        <link href="category.css" rel="stylesheet">
+        <script src="../../controllers/page/CategoryPageController.js"></script>
+        <script src="../../controllers/interlayer/CategoryController.js"></script>
+        <script src="../../services/CategoryService.js"></script>
+        <script src="../../controllers/template/CategoryTemplate.js"></script>
     </head>
     <body>
         <div class="row">
@@ -18,7 +18,7 @@
                 <header id="header-site">
 
                     <div class="logo-site">
-                        <img src="../images/Logo2.png" style="width: 100%;"/>
+                        <img src="../../images/Logo2.png" style="width: 100%;"/>
                     </div>
 
                 </header>
@@ -31,7 +31,7 @@
             </div>
             <ul class="navbar-menu animate">
                 <li>
-                    <a href="#about-us" class="animate">
+                    <a class="animate" onclick="menuClick()">
                         <span class="desc animate"> Меню </span>
                         <div class="navigatorIcon1"></div>
                     </a>
@@ -57,31 +57,21 @@
             </ul>
         </nav>
 
-        <div id="menuContainer" class="row sections-child container-fluid">
-            <div class="row post-content">
-                <div class="sectionsImg1"></div>
-                <div class="sectionsLabel">
-                    <label>Название: Весна</label>
-                    <p><b>Описание:</b> drhss dhgddsr shsdherhsf hsdfh
-                        lretw ;nnrjy; ekrja;niru ys;mby
-                        ; w;i re uynvr yai;or nr uya; nruya; uay
-                        sdhdrhs fhdh sdhfhd fhdfd tjdfj</p>
-                </div>
-            </div>
-            <br/>
-            <div class="row post-content">
-                <div class="sectionsImg1"></div>
-                <div class="sectionsLabel">
-                    <label>Название: Весна</label>
-                    <p><b>Описание:</b> Jgbslkdjglsdjdgslg
-                        asfjdjgsdjkdsg
-                        sdgjsdkgkdsgjksdj</p>
-                </div>
+        <div id="categoryContainer" class="categoryList">
+            <div class="row sections-child container-fluid">
+                <a class="animate">
+                    <div class="row post-content">
+                        <img class="categoryImg"/>
+                        <div class="sectionsLabel">
+                            <label>Категория</label>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <script src="../lib/js/jquery.min.js"></script>
-        <script src="../lib/js/bootstrap.min.js"></script>
-        <script src="../lib/js/template7.min.js"></script>
+        <script src="../../lib/js/jquery.min.js"></script>
+        <script src="../../lib/js/bootstrap.min.js"></script>
+        <script src="../../lib/js/template7.min.js"></script>
     </body>
 </html>
