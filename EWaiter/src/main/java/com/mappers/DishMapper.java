@@ -7,7 +7,6 @@ import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
-
 @Service
 public interface DishMapper {
 
@@ -24,8 +23,10 @@ public interface DishMapper {
             @Result(property = "weight", column = "weight"),
             @Result(property = "price", column = "price"),
             @Result(property = "cookTime", column = "cookTime"),
-            @Result(property = "photos", column = "id", javaType=List.class, many=@Many(select="com.mappers.DishPhotoMapper.selectDishPhotos")),
-            @Result(property = "comments", column = "id", javaType=List.class, many=@Many(select="com.mappers.DishCommentMapper.selectDishComments"))
+            @Result(property = "photos", column = "id", javaType=List.class,
+                    many=@Many(select="com.mappers.DishPhotoMapper.selectDishPhotos")),
+            @Result(property = "comments", column = "id", javaType=List.class,
+                    many=@Many(select="com.mappers.DishCommentMapper.selectDishComments"))
     })
     Dish selectById(Integer id);
 
