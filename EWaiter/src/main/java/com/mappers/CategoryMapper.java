@@ -47,7 +47,7 @@ public interface CategoryMapper {
     @Delete("DELETE FROM category WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO category( 'name', 'description', 'photo') VALUES (#{name}, #{description}, #{photo})")
+    @Insert("INSERT INTO category(name, description, photo) VALUES (#{name}, #{description}, #{photo})")
     int insert(Category category);
 
     @Update("UPDATE category SET name = #{name}, description = #{description}, photo = #{photo}")

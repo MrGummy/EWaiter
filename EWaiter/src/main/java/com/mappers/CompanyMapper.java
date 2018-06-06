@@ -48,7 +48,7 @@ public interface CompanyMapper {
     @Delete("DELETE FROM company WHERE id = #{id}")
     int deleteById(Integer id);
 
-    @Insert("INSERT INTO company('name', 'login', 'password', 'regDate') VALUES (#{name}, #{login}, #{password},  #{regDate})")
+    @Insert("INSERT INTO company(name, login, password, regDate) VALUES (#{name}, #{login}, #{password},  #{regDate})")
     int insert(Company company);
 
     @Update("UPDATE company SET name = #{name}, login = #{login}, password = #{password}, regDate = #{regDate}")

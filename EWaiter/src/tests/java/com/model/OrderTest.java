@@ -1,7 +1,5 @@
-package model;
+package com.model;
 
-import com.model.Dish;
-import com.model.Order;
 import org.junit.Test;
 
 import java.sql.Timestamp;

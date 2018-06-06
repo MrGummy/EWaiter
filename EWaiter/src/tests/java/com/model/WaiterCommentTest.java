@@ -1,6 +1,5 @@
-package model;
+package com.model;
 
-import com.model.WaiterComment;
 import org.junit.Test;
 
 import java.sql.Timestamp;

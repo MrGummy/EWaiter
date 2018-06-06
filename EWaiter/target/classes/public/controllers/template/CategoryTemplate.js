@@ -4,10 +4,10 @@ class CategoryTemplate {
         var template = '{{#each categories}}' +
             '<a class="animate" onclick="categoryClick({{id}})">' +
             '<div class="row categoryContent">' +
-            '<img class="categoryImg" src="{{photo}}"/>' +
             '<div class="categoryLabel">' +
             '<label>{{name}}</label>' +
             '</div>' +
+            '<img class="categoryImg" src="{{photo}}"/>' +
             '</div>' +
             '</a>' +
             '{{/each}}';

@@ -1,0 +1,38 @@
+<div class="loginer adding">
+    <div class="container-fluid">
+        <div class="register-form">
+            <div class="hh">
+                <label>Добавление меню</label>
+            </div>
+            <div class="addMenuImgDiv" onclick="addMenuImgClick()">
+                <img class="addMenuImg" src="../images/plus.png"/>
+            </div>
+            <div class="attributesMenu">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label>НАЗВАНИЕ</label>
+                        <input id="nameMenu" name="nameMenu" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label>ОПИСАНИЕ</label>
+                        <textarea id="descriptionMenu" name="descriptionMenu" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label>ДАТА</label>
+                        <input id="dateMenu" name="dateMenu" class="form-control" type="date"/>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row apply">
+                <div>
+                    <button id="applyBut" type="button" class="btn btn-default applyButton" onclick="applyMenu()">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -10,14 +10,15 @@
         <script src="lib/js/jquery.min.js"></script>
         <script src="services/CompanyService.js" charset="utf-8"></script>
         <script src="controllers/interlayer/CompanyController.js" charset="utf-8"></script>
-        <script src="controllers/page/IndexPageController.js" charset="utf-8"></script>
         <script src="controllers/interlayer/MenuController.js" charset="utf-8"></script>
+        <script src="services/MenuService.js" charset="utf-8"></script>
         <script src="controllers/template/TemplateMenu.js" charset="utf-8"></script>
         <script src="controllers/interlayer/CategoryController.js" charset="utf-8"></script>
         <script src="controllers/template/CategoryTemplate.js" charset="utf-8"></script>
         <script src="controllers/interlayer/DishController.js" charset="utf-8"></script>
         <script src="controllers/template/DishTemplate.js" charset="utf-8"></script>
         <script src="controllers/page/SPA.js" charset="utf-8"></script>
+        <script src="controllers/page/IndexPageController.js" charset="utf-8"></script>
     </head>
     <body>
         <div class="row">
@@ -38,25 +39,25 @@
             </div>
             <ul class="navbar-menu animate">
                 <li>
-                    <a href="#about-us" class="animate">
+                    <a href="#menu" class="animate">
                         <span class="desc animate"> Меню </span>
                         <div class="navigatorIcon1"></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#blog" class="animate">
+                    <a href="#waiter" class="animate">
                         <span class="desc animate"> Официанты </span>
                         <div class="navigatorIcon2"></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact-us" class="animate">
+                    <a href="#comment" class="animate">
                         <span class="desc animate"> Отзывы </span>
                         <div class="navigatorIcon3"></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact-us" class="animate">
+                    <a href="#setting" class="animate">
                         <span class="desc animate"> Настройки </span>
                         <div class="navigatorIcon4"></div>
                     </a>
@@ -67,10 +68,11 @@
         <section id=author class="container" src="author.htm"></section>
         <section id=company class="container" src="view/company.htm"></section>
         <section id=menu class="container" src="view/menu.htm"></section>
+        <section id=addMenu class="container" src="view/addMenu.htm"></section>
         <section id=category class="container" src="view/category.htm"></section>
         <section id=dishes class="container" src="view/dishes.htm"></section>
 
-        <div class="categoryList"><div id="contentContainer" class="row categoryBlock container-fluid"></div></div>
+        <!--div class="categoryList"><div id="contentContainer" class="row categoryBlock container-fluid"></div></div-->
 
         <script src="lib/js/jquery.min.js"></script>
         <script src="lib/js/bootstrap.min.js"></script>

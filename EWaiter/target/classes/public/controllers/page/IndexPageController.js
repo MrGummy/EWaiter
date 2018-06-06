@@ -2,7 +2,7 @@ var company;
 var menu;
 var category;
 
-$(window).onload(function () {
+$(window).load(function () {
     document.location.href = "#author";
 });
 
@@ -35,13 +35,6 @@ async function loginClick()
             document.cookie = "login=" + login + ";path=/";
             document.cookie = "password=" + password + ";path=/";
 
-            // $.ajax({
-            //     type: "POST",
-            //     url: "http://localhost:8080/view/company.html",
-                 //data: {request:companies[i]},
-            //     async: true
-            // });
-
             document.location.href = "#company";
             document.getElementById("navigator").style.visibility = "visible";
 
@@ -57,17 +50,42 @@ async function loginClick()
     }
 }
 
-async function allMenuClick() {
+function allMenuClick(){
     document.location.href = "#menu";
 
     var controller = new MenuController();
-    let html = await controller.getCompanyMenu(JSON.stringify(company.menus));
+    var html = controller.getCompanyMenu(JSON.stringify(company.menus));
 
-    var element = document.getElementById("contentContainer");
+    var element = document.getElementById("menuContainer");
     element.innerHTML = html;
-};
+}
 
-async function oneMenuClick(menuId) {
+function addMenuImgClick(e) {
+
+    if (this.files && this.files[0]) {
+        var reader = new FileReader();
+        $(reader).load(function(e) {
+            $('#upload-img').attr('src', e.target.result);
+        });
+        reader.readAsDataURL(this.files[0]);
+    }
+
+    // $("#upload").change(readURL);
+    //
+    // var img = document.getElementById("addMenuImg");
+    // img.setAttribute("src", "адрес_картинки");
+    // document.body.appendChild(img);
+}
+
+function applyMenu() {
+    
+    var controller = new MenuController();
+    var count = controller.insertMenuView();
+
+    alert(count);
+}
+
+function oneMenuClick(menuId) {
 
     for (var i = 0; i < company.menus.length; i++) {
         if (menuId == company.menus[i].id) {
@@ -78,13 +96,13 @@ async function oneMenuClick(menuId) {
     document.location.href = "#category";
 
     var controller = new CategoryController();
-    let html = await controller.getMenuCategory(JSON.stringify(menu.categories));
+    var html = controller.getMenuCategory(JSON.stringify(menu.categories));
 
-    var element = document.getElementById("contentContainer");
+    var element = document.getElementById("categoryContainer");
     element.innerHTML = html;
 }
 
-async function categoryClick(categoryId) {
+function categoryClick(categoryId) {
 
     for (var i = 0; i < menu.categories.length; i++) {
         if (categoryId == menu.categories[i].id) {
@@ -95,8 +113,8 @@ async function categoryClick(categoryId) {
     document.location.href = "#dishes";
 
     var controller = new DishController();
-    let html = await controller.getCategoryDish(JSON.stringify(category.dishes));
+    var html = controller.getCategoryDish(JSON.stringify(category.dishes));
 
-    var element = document.getElementById("contentContainer");
+    var element = document.getElementById("dishesContainer");
     element.innerHTML = html;
 }

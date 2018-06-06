@@ -1,7 +1,5 @@
-package model;
+package com.model;
 
-import com.model.Category;
-import com.model.Dish;
 import org.junit.Test;
 
 import java.util.ArrayList;

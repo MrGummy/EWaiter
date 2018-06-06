@@ -3,12 +3,14 @@ body > section:not(.active) { display:none; }
 body.author > section#author,
 body.company > section#company,
 body.menu > section#menu,
+body.addMenu > section#addMenu,
 body.category > section#category,
 body.dishes > section#dishes { display:block; }
 
 body.author > a[href="#author"],
 body.company > a[href="#company"],
 body.menu > a[href="#menu"],
+body.addMenu > a[href="#addMenu"],
 body.category > a[href="#category"],
 body.dishes > a[href="#dishes"]{}
 
@@ -25,7 +27,7 @@ body {
     text-align: center;
     background: #262727;
     border-bottom: 2px solid #cf4137;
-    position: absolute;
+    position: fixed;
     margin-top: -1px;
     width: 100%;
     opacity: 0.9;
@@ -42,9 +44,10 @@ body {
 }
 
 .register-form {
+    text-align: center;
     background: #262727;
     border: 2px solid #cf4137;
-    margin-top: 30px;
+    margin-top: 70px;
     padding: 20px 10px 20px 10px;
     font-size: 16px;
     left: 50%;
@@ -57,7 +60,6 @@ body {
 }
 
 .hh {
-    margin: 0 0 10px 150px;
     font-size: 1.3em;
 }
 
@@ -363,6 +365,18 @@ body {
     }
 }
 
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 45px;
+    left: 850px;
+}
+
 
 /* MENU */
 .menuContent {
@@ -409,21 +423,82 @@ p {
 }
 
 
+/* ADDMENU */
+.adding {
+    margin-top: 40px;
+}
+.register-form textarea {
+    margin-bottom: 5px;
+    width: 430px;
+    height: 40px;
+    border-radius: 0px;
+}
+.attributesMenu {
+    display: inline-block;
+    margin-top: 10px;
+}
+.apply {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.applyButton {
+    height: 50px;
+    width: 200px;
+    background-color:yellowgreen;
+    border-radius: 0px;
+    font-size: 18px;
+    color:white;
+    border: none !important;
+    margin-bottom: 5px;
+}
+.applyButton:hover {
+    color: white;
+    background-color:darkolivegreen;
+}
+.applyButton:active {
+    color: white;
+    background-color:darkolivegreen;
+}
+.addMenuImgDiv {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+#descriptionMenu {
+    height: 100px;
+}
+.addMenuImg {
+    background-size: cover;
+    background: silver;
+    margin: 0px 10px 2px 0;
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    border-radius: 33px;
+}
+.addMenuImg:hover {
+    cursor: pointer;
+}
+.plus {
+    display: inline-block;
+}
+
+
 /* CATEGORY */
 .categoryList {
     text-align: center;
+    margin-top: 50px;
 }
-
 .categoryBlock {
     width: 600px;
     display: inline-block;
 }
-
 .categoryContent {
     display: inline-block;
     background: #262727;
     border-bottom: 2px solid #cf4137;
-    margin: 50px 25px 0px 25px;
+    margin: 0px 25px 50px 25px;
     padding: 10px;
     font-size: 16px;
     vertical-align: middle;
@@ -433,21 +508,17 @@ p {
     opacity: 0.9;
     text-align: center;
 }
-
 .categoryContent:hover {
     background: #9eca3b;
     cursor: pointer;
 }
-
 .categoryContent:hover .categoryLabel{
     background: rgba(158, 202, 59, 0.9);
     cursor: pointer;
 }
-
 .categoryContent:active {
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 }
-
 .categoryLabel {
     background: rgba(38, 39, 39, 0.9);
     font-size: 16pt;
@@ -457,20 +528,19 @@ p {
     position: relative;
     margin-top: 60px;
 }
-
 .categoryName {
     position: relative;
 }
-
 .categoryImg {
     background-size: cover;
     background: silver;
-    margin: 0;
+    margin-top: -120px;
     display: inline-block;
     float: left;
     width: 180px;
     height: 180px;
 }
+
 
 /* DISHES */
 img.ruble-img {

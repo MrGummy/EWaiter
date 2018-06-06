@@ -6,5 +6,5 @@ function clickNavbarMenu() {
 };
 
 function menuClick() {
-    document.location.href = "/view/menu.html";
+    document.location.href = "/view/menu.htm";
 }

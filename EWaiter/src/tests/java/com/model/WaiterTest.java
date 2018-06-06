@@ -1,8 +1,5 @@
-package model;
+package com.model;
 
-import com.model.Company;
-import com.model.Waiter;
-import com.model.WaiterComment;
 import org.junit.Test;
 
 import java.util.ArrayList;

@@ -1,6 +1,5 @@
-package model;
+package com.model;
 
-import com.model.DishPhoto;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
